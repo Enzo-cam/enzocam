@@ -1,6 +1,7 @@
 import Perfil from "@/Components/Perfil";
 import Contact from "@/Components/Contact";
 import AboutMe from "@/Components/AboutMe";
+import Work from "@/Components/Work";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       </div>
 
       <AboutMe />
+      <Work/>
     </>
   );
 }

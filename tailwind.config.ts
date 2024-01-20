@@ -17,6 +17,7 @@ const config: Config = {
         'bgWhite' : '#ffffff',
         'grisOsc' : '#212529',
         'grisAbout' : '#343a40',
+        'azulOsc' : '#1b263b',
       }
     },
   },

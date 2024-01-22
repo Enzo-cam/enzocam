@@ -1,30 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { IWork } from '@/Interfaces/Work';
+import {FC} from 'react'
 
-const WorkCard = () => {
+
+interface Props{
+  work: IWork
+}
+
+const WorkCard: FC<Props> = ({work}) => {
+  const {icon, projectName, projectDescription, technologies} = work;
   return (
     <div className="max-w-sm border rounded-lg shadow bg-bgWhiteGris p-4">
       <Image
         height={40}
         width={40}
-        src="/IS.png"
+        src={icon}
         className="rounded-md"
         alt="icono del producto"
       />
 
-      <h1 className="text-xl font-semibold mt-4">AcaNombreApp</h1>
+      <h1 className="text-xl font-semibold mt-4">{projectName}</h1>
 
-      <p className="mt-2">Descripcion de la app</p>
+      <p className="mt-2">{projectDescription}</p>
 
       <div className="mt-4 mb-10">
-        <h3 className="font-semibold">Stack</h3>
-        <p>Next, Mongo, TailwindCSS</p>
+        <h3 className="font-semibold">Stack and Services</h3>
+        <p>{technologies}</p>
       </div>
 
       <Link
         className="bg-azulOsc text-white font-medium gap-2 px-3 py-2 rounded-md w-3/6 flex items-center"
-        href={`projects/Hola`}
+        href={`projects/${projectName}`}
       >
         Ver Proyecto
         <FaLongArrowAltRight />

@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         'bgWhite' : '#ffffff',
+        'bgWhiteGris' : '#fdfffc',
         'grisOsc' : '#212529',
         'grisAbout' : '#343a40',
         'azulOsc' : '#1b263b',

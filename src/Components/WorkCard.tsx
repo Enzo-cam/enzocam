@@ -1,40 +1,42 @@
+import Image from "next/image";
+import Link from "next/link";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
 const WorkCard = () => {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-      </a>
-      <div className="p-5">
-        <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
-          </h5>
-        </a>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.
-        </p>
-        <a
-          href="#"
-          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >
-          Read more
-          <svg
-            className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 5h12m0 0L9 1m4 4L9 9"
-            />
-          </svg>
-        </a>
+    <div className="max-w-sm border rounded-lg shadow bg-bgWhiteGris p-4">
+      <Image
+        height={40}
+        width={40}
+        src="/IS.png"
+        className="rounded-md"
+        alt="icono del producto"
+      />
+
+      <h1 className="text-xl font-semibold mt-4">AcaNombreApp</h1>
+
+      <p className="mt-2">Descripcion de la app</p>
+
+      <div className="mt-4 mb-10">
+        <h3 className="font-semibold">Stack</h3>
+        <p>Next, Mongo, TailwindCSS</p>
+      </div>
+
+      <Link
+        className="bg-azulOsc text-white font-medium gap-2 px-3 py-2 rounded-md w-3/6 flex items-center"
+        href={`projects/Hola`}
+      >
+        Ver Proyecto
+        <FaLongArrowAltRight />
+      </Link>
+
+      <div className="flex mt-4 justify-center border-black border-2 rounded-md">
+        <Image
+          src={"/IS.jpg"}
+          width={280}
+          height={150}
+          alt="Imagen del proyecto"
+        />
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ const Work = () => {
         {/* Destap */}
         {workInfo.map(work => (
           <WorkCard
+            key={work.projectName}
             work={work}
           />
         ))}

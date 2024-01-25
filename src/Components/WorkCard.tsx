@@ -1,16 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { IWork } from '@/Interfaces/Work';
-import {FC} from 'react'
+import { IWork } from "@/Interfaces/Work";
+import { FC } from "react";
 
-
-interface Props{
-  work: IWork
+interface Props {
+  work: IWork;
 }
 
-const WorkCard: FC<Props> = ({work}) => {
-  const {icon, projectName, projectDescription, technologies} = work;
+const WorkCard: FC<Props> = ({ work }) => {
+  const { icon, projectName, projectDescription, technologies } = work;
   return (
     <div className="max-w-sm border rounded-lg shadow bg-bgWhiteGris p-4">
       <Image
@@ -25,20 +24,30 @@ const WorkCard: FC<Props> = ({work}) => {
 
       <p className="mt-2">{projectDescription}</p>
 
-      <div className="mt-4 mb-10">
+      <div className="mt-8 mb-11">
         <h3 className="font-semibold">Stack and Services</h3>
         <p>{technologies}</p>
       </div>
 
-      <Link
-        className="bg-azulOsc text-white font-medium gap-2 px-3 py-2 rounded-md w-3/6 flex items-center"
-        href={`projects/${projectName}`}
-      >
-        Ver Proyecto
-        <FaLongArrowAltRight />
-      </Link>
+      {work.available ? (
+        <Link
+          className="bg-azulOsc text-white font-medium gap-2 px-3 py-2 rounded-md w-3/6 flex items-center"
+          href={`projects/${projectName}`}
+        >
+          View project <FaLongArrowAltRight />
+        </Link>
+      ) : (
+        <button
+          className="bg-gray-300 text-black opacity-60 font-medium gap-2 px-3 py-2 rounded-md justify-center w-3/6 flex items-center"
+          disabled={true}
+          type="button"
+        >
+          Soon
+          {/* <FaLongArrowAltRight /> */}
+        </button>
+      )}
 
-      <div className="flex mt-4 justify-center border-black border-2 rounded-md">
+      <div className="flex mt-8 justify-center border-black border-2 rounded-md">
         <Image
           src={"/IS.jpg"}
           width={280}

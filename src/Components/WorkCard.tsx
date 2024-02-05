@@ -24,21 +24,21 @@ const WorkCard: FC<Props> = ({ work }) => {
 
       <p className="mt-2">{projectDescription}</p>
 
-      <div className="mt-8 mb-11">
+      <div className="mt-8 mb-6">
         <h3 className="font-semibold">Stack and Services</h3>
         <p>{technologies}</p>
       </div>
 
       {work.available ? (
         <Link
-          className="bg-azulOsc text-white font-medium gap-2 px-3 py-2 rounded-md w-3/6 flex items-center"
+          className="bg-azulOsc text-white font-medium gap-2 px-3 py-2 rounded-md w-fit flex items-center"
           href={`projects/${projectName}`}
         >
           View project <FaLongArrowAltRight />
         </Link>
       ) : (
         <button
-          className="bg-gray-300 text-black opacity-60 font-medium gap-2 px-3 py-2 rounded-md justify-center w-3/6 flex items-center"
+          className="bg-gray-300 text-black opacity-60 font-medium gap-2 px-1 py-2 rounded-md justify-center w-2/6 flex items-center"
           disabled={true}
           type="button"
         >
@@ -47,14 +47,14 @@ const WorkCard: FC<Props> = ({ work }) => {
         </button>
       )}
 
-      <div className="flex mt-8 justify-center border-black border-2 rounded-md">
+      {/* <div className="flex mt-8 justify-center border-black border-2 rounded-md">
         <Image
           src={"/IS.jpg"}
           width={280}
           height={150}
           alt="Imagen del proyecto"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -5,14 +5,26 @@ export const workInfo: IWork[] = [
     icon: "/IS.png",
     projectName: "iPhoneShop",
     projectDescription:
-      "Website focused on sales registration and income from repairs in a store dedicated to selling Apple products.",
-    technologies:
-      "Next.js, Node.js, MongoDB, ChakraUI, UI Design, Development, Third-party Integrations, Database Design",
+      "Website optimized for sales registration and income tracking from repairs in a store specializing in Apple products. The platform features an up-to-date price list, ensuring customers and staff always have access to the latest pricing information. It empowers administrators with robust reporting tools, enabling them to generate detailed reports for sales, expenses, and operational activities. The system is designed to enhance the store's efficiency, providing a comprehensive overview of financial and inventory management.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "MongoDB",
+      "ChakraUI",
+      "react-hook-form"
+    ],
+    services: [
+      "UI Design",
+      "Development",
+      "Third-party Integrations",
+      "Database Design",
+    ],
     imagesProject: ["/destap/image1.jpg", "/destap/image2.jpg"],
-    problem: '',
-    objective: '',
-    solution: '',
-    developmentPeriod: '',
+    problem: "",
+    objective: "",
+    solution: "",
+    developmentPeriod: "",
     available: true,
   },
   {
@@ -20,13 +32,23 @@ export const workInfo: IWork[] = [
     projectName: "Yaguarete Group",
     projectDescription:
       "Website for internal control of a sand company and its operations. Records of sales, expenses, cash operations.",
-    technologies:
-      "Next.js, Nest.js, MongoDB, TailwindCSS, React Native, Sanity CMS, UI Design, Development, Third-party Integrations",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Node",
+      "MongoDB",
+      "TailwindCSS",
+    ],
+    services: [
+      "UI Design",
+      "Development",
+      "Third-party Integrations",
+    ],
     imagesProject: ["/destap/image1.jpg", "/destap/image2.jpg"],
-    problem: '',
-    objective: '',
-    solution: '',
-    developmentPeriod: '',
+    problem: "",
+    objective: "",
+    solution: "",
+    developmentPeriod: "",
     available: true,
   },
   {
@@ -34,12 +56,16 @@ export const workInfo: IWork[] = [
     projectName: "Foundation 'Mi alma por Bautista'",
     projectDescription:
       "Web system designed for control and monitoring of operations within a Foundation dedicated to therapeutic treatment of children.",
-    technologies: "Next.js, Node.js, MongoDB, TailwindCSS, Development, UI Design.",
-    imagesProject: ["/yaguarete/image1.jpg", "/yaguarete/image2.jpg"],
-    problem: '',
-    objective: '',
-    solution: '',
-    developmentPeriod: '',
+    technologies:
+      ["Next.js", "Node.js", "MongoDB", "TailwindCSS"],
+      services: [
+        "Development", "UI Design"
+      ],
+      imagesProject: ["/yaguarete/image1.jpg", "/yaguarete/image2.jpg"],
+    problem: "",
+    objective: "",
+    solution: "",
+    developmentPeriod: "",
     available: true,
   },
   {
@@ -48,16 +74,20 @@ export const workInfo: IWork[] = [
     projectDescription:
       "Web and mobile application for the acquisition of alcoholic beverages in clubs and events.",
     technologies:
-      "Next.js, Nest.js, MongoDB, TailwindCSS, FlutterFlow, Sanity CMS, UI Design, Development, Third-party Integrations",
+    [
+      "Next.js", "Nest.js", "MongoDB", "TailwindCSS", "Flutter", "Sanity CMS",
+    ],
+    services: [
+      "UI Design", "Development", "Third-party Integrations"
+    ],
     imagesProject: ["/yaguarete/image1.jpg", "/yaguarete/image2.jpg"],
-    problem: '',
-    objective: '',
-    solution: '',
-    developmentPeriod: '',
+    problem: "",
+    objective: "",
+    solution: "",
+    developmentPeriod: "",
     available: false,
   },
 ];
-
 
 // export const workInfo: IWork[] = [
 //   {

@@ -4,10 +4,9 @@ export interface IWork {
     projectDescription: string;
     technologies: string[];
     imagesProject: string[];
-    problem: String;
-    objective: String;
+    challenge: String;
+    growth: String;
     solution: String;
     developmentPeriod: String;
     available: boolean;
-    services: string[]
 }

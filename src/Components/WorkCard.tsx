@@ -10,6 +10,8 @@ interface Props {
 
 const WorkCard: FC<Props> = ({ work }) => {
   const { icon, projectName, projectDescription, technologies } = work;
+  const newTechs = technologies.join(', ')
+  console.log(newTechs)
   return (
     <div className="max-w-sm border rounded-lg shadow bg-bgWhiteGris p-4">
       <Image
@@ -26,7 +28,7 @@ const WorkCard: FC<Props> = ({ work }) => {
 
       <div className="mt-8 mb-6">
         <h3 className="font-semibold">Stack and Services</h3>
-        <p>{technologies}</p>
+        <p>{newTechs}</p>
       </div>
 
       {work.available ? (

@@ -3,6 +3,7 @@ import { IWork } from "@/Interfaces/Work";
 export const workInfo: IWork[] = [
   {
     icon: "/IS.png",
+    url:'iphoneshop',
     projectName: "iPhoneShop",
     projectDescription:
       "Website optimized for sales registration and income tracking from repairs in a store specializing in Apple products.The system is designed to enhance the store's efficiency, providing a comprehensive overview of financial and inventory management.",
@@ -19,23 +20,27 @@ export const workInfo: IWork[] = [
     challenge: "The client needed a user-friendly website to track purchases and cell phone repairs, with a feature to update the price list in real-time. The key focus was on distinct sections for sales, deposits, and technical services, each requiring unique data fields and essential features.",
     solution: "We formed a four-person team: me as frontend developer and PO, a backend developer/lead, a UX/UI designer, and a project manager. We adhered to our roles, presented biweekly progress updates to the client, and successfully delivered the project within the two-month timeframe.",
     developmentPeriod: "July 2023 - September 2023",
+    images: '/HomeIS.png',
     available: true,
   },
   {
     icon: "/yagua.png",
+    url:'yaguarete-group',
     projectName: "Yaguarete Group",
     projectDescription:
       "Website for internal control of a sand company and its operations. Records of sales, expenses, cash operations.",
-    technologies: ["Next.js", "TypeScript", "Node", "MongoDB", "TailwindCSS"],
+    technologies: ["Next.js", "TypeScript", "Node", "MongoDB", "TailwindCSS", 'ShadCN', 'React-query'],
     imagesProject: ["/destap/image1.jpg", "/destap/image2.jpg"],
-    challenge: "",
-    growth: "",
-    solution: "",
-    developmentPeriod: "",
+    growth: "I transitioned to a full-stack role, handling tasks by feature and bridging backend services with the frontend. This experience enriched my knowledge of API integration, database modeling, and data storage. The project was challenging, involving complex interactions between data models and demanding a sophisticated UI and advanced feature set. My backend work focused on crafting secure APIs and managing database operations to support a seamless user interface.",
+    challenge: "During the project, I encountered challenges in creating an interactive and user-friendly UI, as we integrated new libraries like Chakra UI and TailwindCSS. I developed complex features as tracking system actions in a history log added complexity. Additionally, crafting more interactive URLs to enhance user engagement was a key challenge to meet the client's requirements for a flexible and intuitive interface.",
+    solution: "We assembled a robust team of three developers, with each one taking ownership of different segments of the program—cash management for one, sales for another—thus streamlining the app's focus. We employed agile methodologies, with weekly tracking on Trello and bi-weekly meetings to ensure progress. The project thrived on collaborative effort, and we also implemented pair programming sessions to enhance feature development and problem-solving.",
+    developmentPeriod: "November 2023- February 2024",
     available: true,
+    images: '/HomeIS.png',
   },
   {
     icon: "/fundacion.png",
+    url:'fundacion',
     projectName: "Foundation 'Mi alma por Bautista'",
     projectDescription:
       "Web system designed for control and monitoring of operations within a Foundation dedicated to therapeutic treatment of children.",
@@ -44,11 +49,13 @@ export const workInfo: IWork[] = [
     challenge: "",
     growth: "",
     solution: "",
-    developmentPeriod: "",
+    developmentPeriod: "January 2024 - Doing",
     available: false,
+    images: "/HOmeIS.png",
   },
   {
     icon: "/destap.png",
+    url:'destap',
     projectName: "Destap!",
     projectDescription:
       "Web and mobile application for the acquisition of alcoholic beverages in clubs and events.",
@@ -64,7 +71,8 @@ export const workInfo: IWork[] = [
     challenge: "",
     growth: "",
     solution: "",
-    developmentPeriod: "",
+    developmentPeriod: "February 2024 - Doing",
     available: false,
+    images: './HomeIS.jpg',
   },
 ];

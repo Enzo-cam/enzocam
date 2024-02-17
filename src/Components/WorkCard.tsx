@@ -9,9 +9,9 @@ interface Props {
 }
 
 const WorkCard: FC<Props> = ({ work }) => {
-  const { icon, projectName, projectDescription, technologies } = work;
+  const { icon, projectName, projectDescription, technologies, url } = work;
   const newTechs = technologies.join(', ')
-  console.log(newTechs)
+
   return (
     <div className="max-w-sm border rounded-lg shadow bg-bgWhiteGris p-4">
       <Image
@@ -34,7 +34,7 @@ const WorkCard: FC<Props> = ({ work }) => {
       {work.available ? (
         <Link
           className="bg-azulOsc text-white font-medium gap-2 px-3 py-2 rounded-md w-fit flex items-center"
-          href={`projects/${projectName}`}
+          href={`projects/${url}`}
         >
           View project <FaLongArrowAltRight />
         </Link>

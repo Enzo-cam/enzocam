@@ -10,37 +10,39 @@ interface Props {
 
 const WorkCard: FC<Props> = ({ work }) => {
   const { icon, projectName, projectDescription, technologies, url } = work;
-  const newTechs = technologies.join(', ')
+  const newTechs = technologies.join(' | ')
 
   return (
-    <div className="max-w-sm border rounded-lg shadow bg-bgWhiteGris p-4">
-      <Image
-        height={40}
-        width={40}
-        src={icon}
-        className="rounded-md"
-        alt="icono del producto"
-      />
+    <div className="flex flex-col gap-4 max-w-sm border rounded-lg shadow bg-bgWhiteGris p-4">
+      <div className="flex gap-2 items-center">
+        <Image
+          height={30}
+          width={40}
+          src={icon}
+          className="rounded-md"
+          alt="icono del producto"
+        />
 
-      <h1 className="text-xl font-semibold mt-4">{projectName}</h1>
+        <h1 className="text-xl font-medium underline underline-offset-2">{projectName}</h1>
+      </div>
 
-      <p className="mt-2">{projectDescription}</p>
+      <p className="">{projectDescription}</p>
 
-      <div className="mt-8 mb-6">
-        <h3 className="font-semibold">Stack and Services</h3>
+      <div className="">
+        <h3 className="font-semibold text-lg">Stack</h3>
         <p>{newTechs}</p>
       </div>
 
       {work.available ? (
         <Link
-          className="bg-azulOsc text-white font-medium gap-2 px-3 py-2 rounded-md w-fit flex items-center"
+          className="bg-grisOsc text-white font-medium gap-2 px-3 py-2 rounded-md w-fit flex items-center"
           href={`projects/${url}`}
         >
           View project <FaLongArrowAltRight />
         </Link>
       ) : (
         <button
-          className="bg-gray-300 text-black opacity-60 font-medium gap-2 px-1 py-2 rounded-md justify-center w-2/6 flex items-center"
+          className="bg-gray-300 text-grisOsc opacity-60 font-medium gap-2 px-1 py-2 rounded-md justify-center w-2/6 flex items-center"
           disabled={true}
           type="button"
         >
@@ -48,15 +50,6 @@ const WorkCard: FC<Props> = ({ work }) => {
           {/* <FaLongArrowAltRight /> */}
         </button>
       )}
-
-      {/* <div className="flex mt-8 justify-center border-black border-2 rounded-md">
-        <Image
-          src={"/IS.jpg"}
-          width={280}
-          height={150}
-          alt="Imagen del proyecto"
-        />
-      </div> */}
     </div>
   );
 };

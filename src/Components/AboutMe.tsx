@@ -3,14 +3,16 @@ const AboutMe = () => {
     <div className="bg-grisAbout text-white px-4 py-10">
       <h1 className="font-semibold text-3xl mb-2">~ About Me</h1>
       <p className="mb-4 font-light">
-        I've been studing two years about programming, web development and the
-        technologies. Currently I have a year of professional experience as a
-        developer, with interest in creating a product, optimistic, enthusiastic
-        and able to provide experience in development, design, testing and
-        maintenance of software systems.
+        I've been working two years in programming and web development.
+        Currently I have one year as Frontend developer and focusing in
+        Fullstack.
       </p>
       <p className="mb-4 font-light">
-        I originally focused on building as a frontend engineer then shortly I started taking my first steps in backend to became a Fullstack developer.
+        In my journey I was adapting and utilizing the latest technologies to
+        develop high-quality products for freelance clients, with optimistic
+        attitude, enthusiastic with solid skills that contribute to the
+        development, design, testing, and maintenance of software systems, pages
+        and application
       </p>
       <p className="font-light">
         Constantly learning and looking for new ways to learn and grow

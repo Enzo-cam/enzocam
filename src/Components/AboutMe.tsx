@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <div className="bg-grisAbout text-white px-4 py-10">
+    <div id="about-me" className="bg-grisAbout text-white px-4 py-10">
       <h1 className="font-semibold text-3xl mb-2">~ About Me</h1>
       <p className="mb-4 font-light">
         I've been working two years in programming and web development.

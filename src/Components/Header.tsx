@@ -12,9 +12,9 @@ const Header = () => {
             width={40}
             height={40}
         />
-        <Link href='#' className='text-black font-medium'>About Me</Link>
-        <Link href='#' className='text-black font-medium'>Work</Link>
-        <Link href='#' className='text-black font-medium'>CV</Link>
+        <Link href='#about-me' className='text-black font-medium'>About Me</Link>
+        <Link href='#work' className='text-black font-medium'>Work</Link>
+        <Link href='/cv' className='text-black font-medium'>CV</Link>
         
     </div>
   )

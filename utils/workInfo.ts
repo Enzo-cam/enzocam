@@ -4,7 +4,7 @@ export const workInfo: IWork[] = [
   {
     icon: "/IS.png",
     url:'iphoneshop',
-    projectName: "iPhoneShop",
+    projectName: "iPhone Shop",
     projectDescription:
       "Website for sales registration and income tracking from repairs in a store specializing in Apple products. Designed to enhance the store's efficiency, overview of financial and inventory management.",
     technologies: [
@@ -55,7 +55,7 @@ export const workInfo: IWork[] = [
     growth: "",
     solution: "",
     developmentPeriod: "February 2024 - Doing",
-    available: false,
+    available: true,
     images: './HomeIS.jpg',
   },
   {

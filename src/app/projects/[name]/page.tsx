@@ -21,9 +21,9 @@ const ProjectPage: FC<Props> = ({ params }) => {
   }
 
   return (
-    <div className="px-4 mb-4">
+    <div className="px-4">
       {/* Main */}
-      <div className="mb-10">
+      <div className="mt-28 mb-14">
         <h1 className="text-4xl font-semibold tracking-wide mb-4">
           {project.projectName}
         </h1>
@@ -45,7 +45,7 @@ const ProjectPage: FC<Props> = ({ params }) => {
       </div>
 
       {/* Details */}
-      <div className="mt-8 mb-10">
+      <div className="mb-20">
         <h3 className="text-2xl font-semibold mb-4">Technical details</h3>
         <p className="text-lg mb-4">
           For this project I use the following technologies:{" "}
@@ -64,7 +64,7 @@ const ProjectPage: FC<Props> = ({ params }) => {
       </div>
 
       {/* Personal Growth */}
-      <div className="mt-8 mb-10">
+      <div className="mb-20">
         <h3 className="text-2xl font-semibold mb-4">Personal Growth</h3>
         <p className="">{project.growth}</p>
       </div>
@@ -73,10 +73,10 @@ const ProjectPage: FC<Props> = ({ params }) => {
       <div className="mt-8 mb-10">
         <h3 className="text-2xl font-semibold mb-4">Challenges</h3>
 
-        <h4 className="text-xl font-semibold mb-2">Objective</h4>
+        <h4 className="text-lg font-semibold mb-2">~ Objective</h4>
         <p className="mb-6">{project.challenge}</p>
 
-        <h4 className="text-xl font-semibold mt-6 mb-2">Solution</h4>
+        <h4 className="text-lg font-semibold mt-6 mb-2">~ Solution</h4>
         <p className="">{project.solution}</p>
       </div>
     </div>

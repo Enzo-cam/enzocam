@@ -14,7 +14,7 @@ const ContactRRSS = () => {
             <FaGithub />
             GitHub
         </Link>
-        <Link href="enzo.fcam@gmail.com" className="flex gap-2 items-center border border-black rounded-md py-2 px-3 font-medium">
+        <Link id="about-me" href="enzo.fcam@gmail.com" className="flex gap-2 items-center border border-black rounded-md py-2 px-3 font-medium">
             <MdEmail />
             Gmail
         </Link>

@@ -9,7 +9,6 @@ export default function Home() {
     <>
       <div className="px-4 mb-10">
         <Perfil />
-        <ContactRRSS />
       </div>
 
       <AboutMe />

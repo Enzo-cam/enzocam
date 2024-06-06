@@ -21,9 +21,9 @@ const ProjectPage: FC<Props> = ({ params }) => {
   }
 
   return (
-    <div className="px-4">
+    <div className="px-4 max-w-screen-lg mx-auto lg:px-20">
       {/* Main */}
-      <div className="mt-28 mb-14">
+      <div className="mt-20 mb-14">
         <h1 className="text-4xl font-semibold tracking-wide mb-4">
           {project.projectName}
         </h1>
@@ -45,7 +45,7 @@ const ProjectPage: FC<Props> = ({ params }) => {
       </div>
 
       {/* Details */}
-      <div className="mb-20">
+      <div className="mb-20 lg:mb-12">
         <h3 className="text-2xl font-semibold mb-4">Technical details</h3>
         <p className="text-lg mb-4">
           For this project I use the following technologies:{" "}
@@ -64,7 +64,7 @@ const ProjectPage: FC<Props> = ({ params }) => {
       </div>
 
       {/* Personal Growth */}
-      <div className="mb-20">
+      <div className="mb-20 lg:mb-12">
         <h3 className="text-2xl font-semibold mb-4">Personal Growth</h3>
         <p className="">{project.growth}</p>
       </div>

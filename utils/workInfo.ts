@@ -56,7 +56,7 @@ export const workInfo: IWork[] = [
     solution: "",
     developmentPeriod: "February 2024 - Doing",
     available: true,
-    images: './HomeIS.jpg',
+    images: '/HomeIS.png',
   },
   {
     icon: "/fundacion.png",

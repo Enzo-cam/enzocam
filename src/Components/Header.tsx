@@ -12,21 +12,22 @@ const Header = () => {
 
 
   return (
-    <div className='fixed top-0 left-0 w-full bg-white/60 backdrop-blur-md shadow-sm flex items-center gap-2 px-3 z-50 py-2'>
-        <Link
-          href="/"
-        >
+    <div className='fixed top-0 left-0 w-full bg-white/60 backdrop-blur-md shadow-sm flex items-center gap-3 px-3 z-50 py-2'>
+      <div className='w-full max-w-screen-lg mx-auto lg:px-20 justify-between flex items-center gap-3'>
+        <Link href="/">
           <Image 
-              src={logo}
-              alt='logo'
-              width={35}
-              height={35}
+            src={logo}
+            alt='logo'
+            width={35}
+            height={35}
           />
         </Link>
-        <Link href={path === '/' ? '#about-me' : '/#about-me'} className='text-black font-medium'>About Me</Link>
-        <Link href={path === '/' ? '#work' : '/#work'} className='text-black font-medium'>Work</Link>
-        <Link href='/cv' className='text-black font-medium'>CV</Link>
-        
+        <div className='flex gap-2 lg:gap-6 lg:text-lg'>
+          <Link href={path === '/' ? '#about-me' : '/#about-me'} className='text-black font-medium'>About Me</Link>
+          <Link href={path === '/' ? '#work' : '/#work'} className='text-black font-medium'>Work</Link>
+          <Link href='/cv' className='text-black font-medium'>CV</Link>
+        </div>
+      </div>
     </div>
   )
 }

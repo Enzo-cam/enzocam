@@ -13,7 +13,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className=" w-full  shadow-sm flex items-right justify-between gap-2 px-3 z-50 pb-4">
+    <div className="w-full shadow-sm flex items-right justify-between gap-2 px-3 z-50 pb-4 max-w-screen-lg mx-auto lg:px-20 ">
       <p>
         &copy; {currentYear} Enzo Cámera ——{" "}
         <span className="text-xl">

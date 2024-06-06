@@ -5,3 +5,15 @@
 html{
   background-color: #f8f9fa;
 }
+
+.main-content > * {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.full-width {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 -1rem; /* Ajusta el margen negativo según tu padding */
+  padding: 0 1rem; /* Ajusta el padding según tu diseño */
+}

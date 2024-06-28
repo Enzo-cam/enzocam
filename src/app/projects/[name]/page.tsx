@@ -2,6 +2,7 @@ import Image from "next/image";
 import { workInfo } from "../../../../utils/workInfo";
 import { FC } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import Carousel from "./components/Carousel";
 
 interface Props {
   params: {
@@ -24,17 +25,25 @@ const ProjectPage: FC<Props> = ({ params }) => {
     <div className="px-4 max-w-screen-lg mx-auto lg:px-20">
       {/* Main */}
       <div className="mt-20 mb-14">
-        <h1 className="text-4xl font-semibold tracking-wide mb-4">
-          {project.projectName}
-        </h1>
+        <div className="flex justify-between items-center mb-4">
+          <h1 className="text-4xl font-semibold tracking-wide">
+            {project.projectName}
+          </h1>
+          <p
+            className="text-sm"
+          >{project.developmentPeriod}</p>
+        </div>
         <div className="flex justify-center">
-          <Image
+          <Carousel 
+            images={project.imagesProject}
+          />
+          {/* <Image
             src={project.images}
             alt="Icono del producto"
             width={800}
             height={800}
             className="rounded-md sm:w-full sm:object-cover md:w-auto md:object-scale-down"
-            />
+            /> */}
         </div>
       </div>
 

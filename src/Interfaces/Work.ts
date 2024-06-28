@@ -9,6 +9,5 @@ export interface IWork {
     solution: String;
     developmentPeriod: String;
     available: boolean;
-    images: string;
     url: string;
 }

@@ -68,7 +68,7 @@ export const workInfo: IWork[] = [
     available: true,
   },
   {
-    icon: "/workIcons/gitano.png",
+    icon: "/workIcons/Gitano.png",
     url: "gitano-club",
     projectName: "Gitano Club",
     projectDescription:

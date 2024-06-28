@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  experimental: {
+    outputFileTracing: false,
+  },
+};
 
-module.exports = {
-    nextConfig,
-    experimental: {
-      outputFileTracing: false,
-    },
-  };
+module.exports = nextConfig;

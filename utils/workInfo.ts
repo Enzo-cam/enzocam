@@ -32,7 +32,7 @@ export const workInfo: IWork[] = [
       "TailwindCSS",
       "ShadCN",
     ],
-    imagesProject: ["/YaguaImgs/yagua1.png", "/YaguaImgs/yagua2.png", "/YaguaImgs/yagua3.png"],
+    imagesProject: ["/YaguaImgs/Yagua1.jpeg", "/YaguaImgs/Yagua2.jpeg", "/YaguaImgs/Yagua3.jpeg"],
     growth:
       "I transitioned to a full-stack role, handling tasks by feature and bridging backend services with the frontend. This experience enriched my knowledge of API integration, database modeling, and data storage. The project was challenging, involving complex interactions between data models and demanding a sophisticated UI and advanced feature set. My backend work focused on crafting secure APIs and managing database operations to support a seamless user interface.",
     challenge:

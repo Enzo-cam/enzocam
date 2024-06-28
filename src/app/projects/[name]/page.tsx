@@ -12,7 +12,6 @@ interface Props {
 
 const ProjectPage: FC<Props> = ({ params }) => {
   const projectUrl = params.name;
-  console.log(projectUrl)
   
   const project = workInfo.find((work) => work.url === projectUrl);
 

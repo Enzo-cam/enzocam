@@ -10,17 +10,18 @@ const Contact = () => {
         Write me at{" "}
         <Link
           className="font-semibold text-grisOsc"
+          target="_blank"
           href="https://www.linkedin.com/in/enzo-camera/"
         >
           Linkedin
         </Link>{" "}
         or send me an email at{" "}
-        <a
+        <Link
           className="text-grisOsc font-semibold"
           href="mailto:enzo.fcam@gmail.com"
         >
           Gmail
-        </a>
+        </Link>
       </p>
     </div>
   );

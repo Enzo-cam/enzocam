@@ -7,10 +7,6 @@ import { usePathname } from 'next/navigation'
 
 const Header = () => {
   const path = usePathname()
-
-  console.log(path)
-
-
   return (
     <div className='fixed top-0 left-0 w-full bg-white/60 backdrop-blur-md shadow-sm flex items-center gap-3 px-3 z-50 py-2'>
       <div className='w-full max-w-screen-lg mx-auto lg:px-20 justify-between flex items-center gap-3'>

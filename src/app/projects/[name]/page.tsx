@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { workInfo } from "../../../../utils/workInfo";
 import { FC } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -10,17 +9,32 @@ interface Props {
   };
 }
 
-const ProjectPage: FC<Props> = ({ params }) => {
+function formatTitle(slug : string) {
+  return slug
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
+export async function generateMetadata({ params }: Props) {
+  const projectUrl = params.name;
+  const formattedTitle = formatTitle(projectUrl);
+  return {
+    title: `${formattedTitle} - Enzo Cámera`,
+    description: `Project ${formattedTitle} by Enzo Cámera`
+  };
+}
+
+const ProjectPage: FC<Props> = ({ params }: Props) => {
   const projectUrl = params.name;
   
   const project = workInfo.find((work) => work.url === projectUrl);
-
   if (!project) {
     // Manejar el caso en el que el proyecto no se encuentra
     return <div>Project not found</div>;
   }
-
-  return (
+  
+  return ( 
     <div className="px-4 max-w-screen-lg mx-auto lg:px-20">
       {/* Main */}
       <div className="mt-20 mb-14">

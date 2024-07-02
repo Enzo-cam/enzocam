@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Head from 'next/head'
 import Header from '@/Components/Header'
 import Footer from '@/Components/Footer'
 
@@ -18,9 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
+        <meta name="Personal Page" content="Portfolio Enzo Camera" />    
         <link rel="icon" href="/enzocamIcon.png" sizes="any" />
-      </head>
+      </Head>
       <body className={inter.className}>
         <Header/>
         <main className="min-h-screen mt-20">

@@ -19,7 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
+        <title>Enzo Cámera</title>
         <link rel="icon" href="/enzocamIcon.png" sizes="any" />
         <meta property="og:title" content="Enzo Cámera" />
         <meta
@@ -34,7 +35,7 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta name="Personal Page" content="Portfolio Enzo Camera" />
         <link rel="icon" href="/enzocamIcon.png" sizes="any" />
-      </Head>
+      </head>
       <body className={inter.className}>
         <Header />
         <main className="min-h-screen mt-20">{children}</main>

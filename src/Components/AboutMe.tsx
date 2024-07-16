@@ -5,7 +5,7 @@ const AboutMe = () => {
         <h1 className="font-semibold text-3xl mb-2">~ About Me</h1>
         <p className="mb-4 font-light">
           I've been working and studying for two years in programming and web
-          development. Currently, I have one year of experience as Frontend
+          development. Currently, I have almost two years of experience as Frontend
           developer and focusing on Fullstack.
         </p>
         <p className="mb-4 font-light">
